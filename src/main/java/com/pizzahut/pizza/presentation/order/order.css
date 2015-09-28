@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Sep, 2015, 5:19:05 AM
+    Author     : abdul
+*/
+
+.button {
+    -fx-background-color: linear-gradient(derive(slategray, -30%), slategray);
+    -fx-background-insets: 0;
+    -fx-background-radius: 30;
+    -fx-padding: 0.5em 1em;
+    -fx-graphic-text-gap: 1em;
+    -fx-text-fill: white;
+}
+
+.button:focused {
+    -fx-background-color: derive(slategray, 50%), linear-gradient(derive(slategray, -30%), slategray);
+    -fx-background-insets: -1.4, 0;
+    -fx-background-radius:  31.4, 30;
+}
+
+.button:default {
+    -fx-background-color: linear-gradient(derive(royalblue, -30%), royalblue);
+    -fx-background-insets: 0;
+    -fx-background-radius: 30;
+}
+
+.button:default:focused {
+    -fx-background-color: derive(royalblue, 50%), linear-gradient(derive(royalblue, -30%), royalblue);
+    -fx-background-insets: -1.4, 0;
+    -fx-background-radius:  31.4, 30;
+}
+
+.save-button, .save-button:default {
+    -fx-background-color: linear-gradient(derive(forestgreen, -30%), forestgreen);
+    -fx-background-insets: 0;
+    -fx-background-radius: 30;
+}
+
+.save-button:focused, .save-button:default:focused {
+    -fx-background-color: derive(forestgreen, 50%), linear-gradient(derive(forestgreen, -30%), forestgreen);
+    -fx-background-insets: -1.4, 0;
+    -fx-background-radius:  31.4, 30;
+}
+
+.delete-button, .delete-button:default {
+    -fx-background-color: linear-gradient(derive(firebrick, -30%), firebrick);
+    -fx-background-insets: 0;
+    -fx-background-radius: 30;
+}
+
+.delete-button:focused, .delete-button:default:focused {
+    -fx-background-color: derive(firebrick, 50%), linear-gradient(derive(firebrick, -30%), firebrick);
+    -fx-background-insets: -1.4, 0;
+    -fx-background-radius:  31.4, 30;
+}
+
+.quit-button, .quit-button:default {
+    -fx-background-color: linear-gradient(derive(red, -30%), red);
+    -fx-background-insets: 0;
+    -fx-background-radius: 30;
+}
+
+.quit-button:focused, .quit-button:default:focused {
+    -fx-background-color: derive(red, 50%), linear-gradient(derive(red, -30%), red);
+    -fx-background-insets: -1.4, 0;
+    -fx-background-radius:  31.4, 30;
+}
+
+.close-button, .close-button:default {
+    -fx-background-color: linear-gradient(derive(red, -30%), red);
+    -fx-background-insets: 0;
+    -fx-background-radius: 30;
+}
+
+.close-button:focused, .close-button:default:focused {
+    -fx-background-color: derive(red, 50%), linear-gradient(derive(red, -30%), red);
+    -fx-background-insets: -1.4, 0;
+    -fx-background-radius:  31.4, 30;
+}

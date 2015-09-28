@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pizzahut.pizza.presentation.order.OrderPresenter">
+   <children>
+      <VBox layoutX="121.0" layoutY="26.0" prefHeight="155.0" prefWidth="381.0" spacing="15.0" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <Label fx:id="orderPizzaNowLbl" alignment="CENTER" focusTraversable="false" layoutX="221.0" layoutY="26.0" text="Order Your Pizza Now!!">
+               <VBox.margin>
+                  <Insets left="100.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="nameTxtField" layoutX="170.0" layoutY="61.0" prefHeight="30.0" prefWidth="381.0" promptText="Enter your Name" />
+            <TextField fx:id="phoneTxtField" layoutX="170.0" layoutY="101.0" prefHeight="30.0" prefWidth="277.0" promptText="Enter your Phone No" />
+            <TextField fx:id="addressTxtField" layoutX="170.0" layoutY="140.0" prefHeight="30.0" prefWidth="277.0" promptText="Enter your Address" />
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" layoutX="98.0" layoutY="207.0" prefHeight="176.0" prefWidth="427.0" spacing="50.0" AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="207.0">
+         <children>
+            <VBox layoutX="120.0" layoutY="186.0" prefHeight="127.0" prefWidth="150.0" spacing="15.0" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="379.0" AnchorPane.topAnchor="186.0">
+               <children>
+                  <Label fx:id="pizzaSizeLbl" text="Size" />
+                  <RadioButton fx:id="smallSizeTogBtn" mnemonicParsing="false" prefHeight="18.0" prefWidth="74.0" text="Small" />
+                  <RadioButton fx:id="mediumSizeTogBtn" mnemonicParsing="false" prefHeight="18.0" prefWidth="83.0" text="Medium" />
+                  <RadioButton fx:id="largeSizeTogBtn" mnemonicParsing="false" prefHeight="18.0" prefWidth="77.0" text="Large" />
+               </children>
+            </VBox>
+            <VBox layoutX="221.0" layoutY="186.0" prefHeight="127.0" prefWidth="150.0" spacing="15.0">
+               <children>
+                  <Label fx:id="crustLbl" text="Crust" />
+                  <RadioButton fx:id="thinCurstTogBtn" mnemonicParsing="false" text="Thin" />
+                  <RadioButton fx:id="thickCurstTogBtn" mnemonicParsing="false" text="Thick" />
+               </children>
+            </VBox>
+            <VBox layoutX="322.0" layoutY="186.0" prefHeight="176.0" prefWidth="146.0" spacing="15.0" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="322.0" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="186.0">
+               <children>
+                  <Label fx:id="toppingsLbl" text="Toppings" />
+                  <RadioButton fx:id="peperooniTogBtn" mnemonicParsing="false" text="Pepperoni" />
+                  <RadioButton fx:id="mushroomsTogBtn" mnemonicParsing="false" text="Mushrooms" />
+                  <RadioButton fx:id="anchoviesTogBtn" mnemonicParsing="false" text="Anchovies" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="404.0" layoutY="394.0" prefHeight="25.0" prefWidth="129.0" spacing="15.0">
+         <children>
+            <Button fx:id="saveBtn" defaultButton="true" disable="true" layoutX="331.0" layoutY="399.0" minWidth="90.0" mnemonicParsing="false" text="Save" />
+            <Button fx:id="cancelBtn" cancelButton="true" layoutX="393.0" layoutY="399.0" minWidth="90.0" mnemonicParsing="false" styleClass="button-icon" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
